@@ -1,13 +1,21 @@
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<h1>Hello, world!</h1>);
 
-/*
 
-const is a signal that varibale will not be reassigned whereas let is helpful when vice versa is true
+
+** const is a signal that varibale will not be reassigned whereas let is helpful when vice versa is true
 
 REACT DOM
 Document Object Model, is a World Wide Web Consortium standard logical representation of any webpage. 
 In easier words, DOM is a tree-like structure that contains all the elements and it’s properties of a website as its nodes. 
 DOM provides a language-neutral interface that allows accessing and updating of the content of any element of a webpage. 
+
+1. render() - used to render a single React Component or several Components wrapped together in a Component or a div element.
+2. findDOMNode() - This function is generally used to get the DOM node where a particular React component was rendered. 
+3. unmountComponentAtNode() -  This function is used to unmount or remove the React Component that was rendered to a particular container.
+4. hydrate() -  This method is equivalent to the render() method but is implemented while using server-side rendering. 
+5. createPortal() - Usually, when an element is returned from a component’s render method, it’s mounted on the DOM as a child of the nearest parent node which in some cases may not be desired.
+                    Portals allow us to render a component into a DOM node that resides outside the current DOM hierarchy of the parent component. 
+
 
 root.render()
